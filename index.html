@@ -1,14 +1,111 @@
-<details open>
-  <summary>🌳 개발</summary>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Tree</title>
 
-  <br/>
+  <style>
+    body {
+      background-color: #111827;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
 
-  <table>
-    <tr>
-      <td align="center">
-        <img src="./backend.png" width="160"/>
-      </td>
-    </tr>
-  </table>
+    summary {
+      cursor: pointer;
+      margin: 8px 0;
+      font-size: 18px;
+    }
+
+    details {
+      margin-left: 10px;
+    }
+
+    /* 카드 영역 */
+    .card-container {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .card {
+      width: 150px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+  </style>
+</head>
+
+<body>
+
+<h1>🌳 Job Tree</h1>
+
+<!-- 대분류 -->
+<details>
+  <summary>🌿 개발</summary>
+
+  <!-- 중분류 -->
+  <details>
+    <summary>🍃 웹 개발</summary>
+
+    <!-- 직무 -->
+    <details>
+      <summary>🌱 백엔드</summary>
+
+      <!-- 세부사항 = 카드 -->
+      <div class="card-container">
+
+        <div class="card">
+          <img src="./backend1.png"/>
+          <p>API</p>
+        </div>
+
+        <div class="card">
+          <img src="./backend2.png"/>
+          <p>Database</p>
+        </div>
+
+        <div class="card">
+          <img src="./backend3.png"/>
+          <p>Server</p>
+        </div>
+
+      </div>
+
+    </details>
+
+    <!-- 직무 2 -->
+    <details>
+      <summary>🌱 프론트엔드</summary>
+
+      <div class="card-container">
+
+        <div class="card">
+          <img src="./cards/ui.png"/>
+          <p>UI</p>
+        </div>
+
+        <div class="card">
+          <img src="./cards/ux.png"/>
+          <p>UX</p>
+        </div>
+
+      </div>
+
+    </details>
+
+  </details>
 
 </details>
